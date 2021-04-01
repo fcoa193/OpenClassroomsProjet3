@@ -1,0 +1,168 @@
+@font-face{
+	font-family: "Roboto", "Shrikhand";
+}
+
+/*
+ violet=#9356DC;
+$rose=#FF79DA;
+$turquoise=#99E2D0;
+$gris=#F2F2F2; */
+
+@media all and (max-width: 700px){
+	body{
+		font-family: "Roboto", "Shrikhand";
+		justify-content: center;
+		margin: 0px;
+	}
+	p{
+		margin: 2px;
+	}
+/* txt management*/
+	.title{
+		font-size: 25px;
+		margin: auto auto 10px 20px;
+	}
+	.title1{
+		font-size: 25px;
+		margin: 55px auto 25px 20px;
+	}
+	.big_txt{
+		font-size: 17px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin: 5px 0px 5px 4px;
+	}
+	.small_txt{
+		margin: 5px 0px 5px 8px;
+	}
+/* top */
+	#mid{
+		margin: 15px auto 10px 90px;
+	}
+	#marker{
+		margin-left: 90px;
+		font-size: 20px;
+	}
+	.location{
+		background-color: gray;
+		display: flex;
+		text-align: center;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	span{
+		margin-left: 20px;
+	}
+	.invitation{
+		text-align: center;
+		background-color: #F2F2F2;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.btn_explore{
+		border-radius: 50px;
+		color: white;
+		background-image: linear-gradient(to bottom right, #FF79DA,#9356DC);
+		width: 200px;
+		margin: 30px auto auto auto;
+		padding: 12px 0;
+	}
+
+
+	.btn_fonction{
+		display: flex;
+		background-color: #F2F2F2;
+		border: 1px solid white;
+		box-shadow: 0 0 15px #cccccc;
+		border-radius: 14px;
+		margin: 20px 15px 30px 40px;
+		padding: 15px 0;
+	}
+	.number{
+		height: 25px;
+		width: 25px;
+		border-radius: 100%;
+		color: white;
+		background-color: #9356DC;
+		text-align: center;
+		position: relative;
+		top: 0px;
+		right: 15px;
+	}
+	#mobile, #list, #store{
+		position: relative;
+		top: 2px;
+		padding-left: 5px;
+		padding-right: 10px;
+		font-size: 20px;
+	}
+	#mobile, #list{
+		color: gray;
+	}
+	#store{
+		color:#9356DC;
+	}
+	.fa, .fas{
+		margin: 0px 6px 0px 6px;
+	}
+	.les_restos{
+		background-color: #F2F2F2;
+	}
+	#title_padding{
+		padding-top: 55px;
+	}
+	.resto_fich{
+		width: 330px;
+		height: 250px;
+		border: 1px solid white;
+		box-shadow: 0 0 15px #cccccc;
+		border-radius: 14px;
+		background-color: white;
+		padding-bottom: 10px;
+		margin: 20px 15px 20px 20px;
+	}
+	.flex{
+		display: flex;
+	}
+	.nouveau{
+		padding: 7px;
+		color: lime;
+		background-color: green;
+		width: 65px;
+		border-radius: 4px;
+		position: relative;
+		left: 258px;
+		top: 70px;
+	}
+	.img{
+		border-top-left-radius: 14px;
+		border-top-right-radius: 14px;
+		width: 330px;
+		height: 185px;
+	}
+	#heart1, #heart2, #heart3, #heart4{
+		font-size: 23px;
+		font-weight: 200;
+		position: relative;
+		top: 20px;
+		left: 150px;
+	}
+	#heart3{
+		margin-left: 25px;
+	}
+	#heart1:hover, #heart2:hover, #heart3:hover, #heart4:hover{
+		background-image: linear-gradient(to top, #FF79DA,#9356DC);
+	}
+	#logo_2{
+		color: white;
+	}
+	footer{
+		color: white;
+		background-color: gray;
+		padding: 25px;
+	}
+	#utensils{
+		margin-right: 13px;
+
+	}
+}
