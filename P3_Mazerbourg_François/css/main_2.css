@@ -1,7 +1,25 @@
-@media all and (max-width: 700px){
 
-	p{
-		margin: 2px;
+/*Keyframes appear start animation*/
+	@keyframes anim_start{
+		0%{
+			opacity: 0;
+			transform: translateY(8%);
+		}
+		100%{
+			transform: none;
+		}
+	}
+
+
+	p, h4{
+		margin: 8px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.m{
+		border-bottom: 3px solid #99e2d0;
+		width: 40px;
+		overflow: visible;
 	}
 	footer{
 		color: white;
@@ -13,11 +31,12 @@
 		font-family: 'Roboto', sans-serif;
 	}
 	.btn{
-		height: 60px;
+		display: flex;
+		height: auto;
 		background-color: white;
 		border: 1px solid white;
-		box-shadow: 0 0 15px #cccccc;
-		border-radius: 14px;
+		box-shadow: 9px 9px 15px #cccccc;
+		border-radius: 30px;
 		margin: 21px 0px 21px 0px;
 		padding: 10px;
 	}
@@ -28,49 +47,79 @@
 		margin-right: 15px;
 	}
 
-/* top */
-	header{
+/* header */
+	.background{
 		background-color: white;
-		background-image: url("images/restaurants/resto_1.jpg");
+		background-image: url("../images/restaurants/resto_1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 260px;
 	}
 	#arrow{
-		margin: 25px 58px 20px 15px;
+		position: absolute;
+		left: 5%;
 		font-size: 20px;
 	}
 	.logo{
+		display: flex;
 		font-size: 20px;
 	}
 	.img{
 		width: 100%;
 	}
+	.top_flexe{
+		align-self: center;
+		justify-content: center;
+		display: flex;
+		padding: 3px 80px 3px 80px;
+		background-color: white;
+		padding: 15px 0px 15px 0px;
 
-	.top_flex{
-		padding-top: 10px;
 	}
-
-	#heart{
-		font-size: 22px;
+	.top_flex{
 		position: relative;
-		left: 85px;
+		background-color: #F2F2F2;
+		border-radius: 4em 4em 0 0;
+		padding: 50px 0px 20px 0;
+		margin: -65px 0px 0px 0px;
+		justify-content: center;
+
+	}
+	#heart{
+		font-size: 25px;
+		position: relative;
+		left: 5%;
 		top: 12px;
 	}
 /* txt size */
 	.title{
-	font-size: 30px;
+	font-family: "Shrikhand", cursive;
+	font-size: 26px;
 	margin-bottom: 35px;
 	}
 	.txt_big{
 		font-size: 20px;
+		margin: 0;
 	}
-
 /* flex*/
 
 	.top_flex, .mid_flex, .flex{
 		display: flex;
 	}
-	/* mid */
 
-	/*animation slide icone*/
+	/* bouton milieu */
+
+	.textes{
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.btn_title{
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 	#price6{
 		position: relative;
 		left: 25px;
@@ -84,33 +133,60 @@
 		left: 195px;
 	}
 	.price{
+		padding: 0 20px 20px 0;
 		display: flex;
-		margin: 0% 0% 0% 48%;
-		padding: 1px;
+		justify-content: flex-end;
+		align-self: flex-end;
 	}
+	/*animation appear start animation*/
+	.top_1, .milieu_1, .bas_1{
+		animation: anim_start 1s linear 0s;
+	}
+	.top_1{
+		animation-delay: 0.5s;
+	}
+	.milieu_1{
+		animation-delay: 1s;
+	}
+	.bas_1{
+		animation-delay: 1.5s;
+	}
+	/*animation slide icone*/
 	.anim{
 		display: flex;
-		font-size: 20px;
-		overflow: hidden;
-		transform: translateX(50px);
-		transition: transform 700ms ease-in-out;
+		justify-content: center;
+		align-items: center;
+		background-color: #99E2D0;
+		transition: width 0.5s linear;
+		width: 0;
+		border-bottom-right-radius: 30px;
+		border-top-right-radius: 30px;
+		margin: 0px;
+		padding: 0px;
 	}
-	.anim:hover{
-		background-color: green;
-		overflow: visible;
-		transform: translateX(-32px);
-		transition: transform 700ms ease-in-out;
+	.anim_icone{
+		color: white;
+		padding: 15px;
+		font-weight: 95;
+		font-size: 1.5em;
+		line-height: 1.6em;
+	}
+	.price:hover ~ .anim, .anim:hover{
+		width: 30%;
+	}
+	.price:hover ~ .anim_icone{
+		visibility: visible;
 	}
 
-/* Animation rotation
-	.anim{
+
+/*animation rotate icone*/
+	.anim_icone{
 		transform: rotate(0deg);
 	}
-	.anim:hover{
+	.anim:hover ~ .anim_icone, .anim_icone:hover{
 		transform: rotate(360deg);
-		transition: transform 700ms ease-in-out;
+		transition: transform 600ms ease-in-out;
 	}
-	*/
 	.btn_commander{
 		border-radius: 50px;
 		color: white;
@@ -120,14 +196,16 @@
 		text-align: center;
 		padding: 16px 0;
 	}
-
+	
 	/* footer */
 	footer{
 		color: white;
-		background-color: gray;
+		background-color: #333333;
 		padding: 25px;
 	}
 	#utensils{
+		position: relative;
+		top: 7px;
 		margin-right: 13px;
 		margin-left: 6px;
 		font-size: 13px;
@@ -144,6 +222,34 @@
 		margin-left: 6px;
 		font-size: 13px;
 		position: relative;
-		top: 5px;
+		top: 11px;
 	}
+/* computer scale*/
+@media (min-width: 1224px){
+	.top_1, .milieu_1, .bas_1{
+		display: flex;
+	}
+	.btn{
+		width: 20%;
+		margin: 2%;
+	}
+	/*footer*/
+	footer{
+		display: flex;
+	}
+	.flex{
+		margin-left: 7%;
+		margin-right: 7%; 
+	}
+	#mar{
+		margin-left: 0%;
+	}
+	.marg{
+		margin-right: 7%;
+	}
+}
+@media (max-width: 350px){
+	 .title{
+ 		font-size: 23px;
+ 	}
 }

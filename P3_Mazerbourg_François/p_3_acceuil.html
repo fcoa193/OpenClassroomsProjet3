@@ -11,15 +11,21 @@
 	</head>
 
 	<body>
+
+		<div class="loading">
+			<div class="loading_spinner"></div>
+			<div class="load_text">Loading...</div>
+		</div>
+
 		<header>
 			<div class="logo">
-				<img src="images/logo/ohmyfood@2x.svg" id="mid">
+				<div class="img_logo"> <img src="images/logo/ohmyfood@2x.svg" id="mid"></div>
 			</div>
 		</header>
 
 		<div class="location">
 			<p><i class="fas fa-map-marker-alt" id="marker"></i></p> 
-			<span><p>Paris, Belleville</p></span>
+			<span><p><strong>Paris, Belleville</strong></p></span>
 		</div>
 		
 		<div class="invitation">
@@ -73,26 +79,28 @@
 				<h2 id="title_padding"><strong>Restaurants</strong></h2>
 			</div>
 
-			<div class="nouveau">
-				<p>Nouveau</p>
-			</div>
 
 			<div class="resto_fich1">
+
 				<img src="images/restaurants/resto_1.jpg" class="img">
+				<div class="nouveau">
+					<p>Nouveau</p>
+				</div>
+
 				<div class="flex">
 					<h3><div class="big_txt"><strong>La palette du goût</strong></div></h3>
 					<i class="far fa-heart" id="heart1"></i>
 				</div>
 				<p><div class="small_txt">Ménilmontant</div></p>
-			</div>
 
-
-			<div class="nouveau">
-				<p>Nouveau</p>
 			</div>
 
 			<div class="resto_fich">
+
 				<img src="images/restaurants/resto_2.jpg" class="img">
+				<div class="nouveau">
+					<p>Nouveau</p>
+				</div>
 				<div class="flex">
 					<div class="big_txt"><h3><strong>La note enchantée</strong></h3></div>
 					<i class="far fa-heart" id="heart2"></i>
@@ -120,19 +128,26 @@
 		</div>
 
 		<footer>
-			<h1 class="footer_title">ohmyfood</h1>
+			<!-- logo-->
+			<div class="footer_title">
+				<span>ohmyfood</span>
+			</div>
 
 			<div class="flex">
 				<div class="ustensils">
+					<!-- icon-->
 					<i class="fas fa-utensils" id="utensils"></i>
 				</div>
 				<p><strong>Proposer un restaurant</strong></p>
 			</div>
-			<div class="flex">
+
+			<div class="flex" id="mar">
+				<!-- icon-->
 				<i class="fas fa-hands-helping" id="helping"></i>
 				<p><strong>Devenir partenaire</strong></p>
 			</div>
-			<p>Mentions légales</p>
+			
+			<p class="marg">Mentions légales</p>
 			<p>Contact</p>
 		</footer>
 	</body>
